@@ -1,0 +1,9 @@
+# 统一换行：源码与文档用 LF，图片按二进制
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.gitignore text eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
