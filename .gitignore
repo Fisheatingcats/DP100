@@ -6,10 +6,27 @@ __pycache__/
 .venv/
 venv/
 
+# 构建 / 打包产物（不入库）
+build/
+dist/
+out/
+release/
+*.spec
+*.exe
+*.pyd
+*.so
+*.dll
+*.zip
+*.7z
+
 # 运行时状态（每台机器/每次使用不同，不入库）
 data/
 tasks.json
 charge_settings.json
+
+# 截图等生成的展示素材（不入库，仅保留本地）
+docs/*.png
+docs/*.jpg
 
 # 编辑器 / 系统
 .vscode/

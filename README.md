@@ -1,9 +1,9 @@
-﻿# DP100 数控电源上位机
+# DP100 数控电源上位机
 
 正点原子 **ATK-DP100**（30 V / 5 A 数控降压电源）的第三方上位机。
 自带协议实现，不依赖官方 .NET DLL，无需安装驱动。
 
-![界面](docs/screenshot.png)
+> 界面截图见本地 `docs/` 目录（截图属于生成素材，未纳入仓库）。
 
 ## 功能
 
@@ -180,11 +180,14 @@ DP100数控电源上位机/        # 本程序独占的目录，和 QT 下其他
     branding.py    # Logo / 窗口图标加载
     main_window.py # 主窗口
     img/logo.png   # 程序 Logo（同时作为窗口与任务栏图标）
-  docs/            # 截图
-  data/            # CSV 记录输出目录（运行时生成）
-  tasks.json       # 自动化任务（运行时生成）
-  charge_settings.json  # 充电参数（运行时生成）
+  docs/            # 界面截图（生成素材，不入库）
+  data/            # CSV 记录输出目录（运行时生成，不入库）
+  tasks.json       # 自动化任务（运行时生成，不入库）
+  charge_settings.json  # 充电参数（运行时生成，不入库）
 ```
+
+> 仓库已忽略：构建/打包产物（`build/`、`dist/`、`*.exe`、`*.spec` 等）、
+> 运行期状态文件、以及 `docs/` 下的截图。
 
 > 换 Logo 只需替换 `dp100/img/logo.png`（建议正方形 PNG，透明背景），
 > 窗口图标与侧边栏图标会自动跟随。
