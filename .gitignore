@@ -13,6 +13,7 @@ out/
 release/
 *.spec
 *.exe
+*.ico
 *.pyd
 *.so
 *.dll
