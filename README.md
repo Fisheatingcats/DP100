@@ -31,6 +31,27 @@ python main.py --demo          # 无设备时用模拟数据预览界面
 python main.py --auto-connect  # 启动后自动连接第一台设备
 ```
 
+## 打包成 exe
+
+需要先准备图标与版本资源（`dp100/img/logo.ico`、`version_info.txt`）：
+
+```bash
+python -m pip install --user pyinstaller
+
+python -m PyInstaller --noconfirm --clean --onefile --windowed ^
+  --name "DP100上位机" ^
+  --icon "dp100\img\logo.ico" ^
+  --version-file "version_info.txt" ^
+  --add-data "dp100\img;dp100\img" ^
+  main.py
+```
+
+产物：`dist\DP100上位机.exe`（约 35 MB，单文件，目标机无需装 Python）。
+`--add-data` 是为了把 `dp100/img/logo.png` 一起打进去（窗口图标与侧栏 Logo 需要）。
+
+> 打包产物（`dist/`、`build/`、`*.spec`）已在 `.gitignore` 中排除；
+> 发行版 exe 单独放在仓库的 `release` 分支。
+
 ## 连接设备
 
 DP100 有两个接口，分工是固定的：
