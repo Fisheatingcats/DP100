@@ -25,10 +25,6 @@ data/
 tasks.json
 charge_settings.json
 
-# 截图等生成的展示素材（不入库，仅保留本地）
-docs/*.png
-docs/*.jpg
-
 # 编辑器 / 系统
 .vscode/
 .idea/
