@@ -25,6 +25,11 @@ data/
 tasks.json
 charge_settings.json
 
+# 未被 README 引用的截图（仅本地保留，避免仓库变大）
+docs/screenshot_live.png
+docs/screenshot_live_current.png
+docs/screenshot_log.png
+
 # 编辑器 / 系统
 .vscode/
 .idea/
